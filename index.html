@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Help Page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./assets/coin.png" type="image/x-icon" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primaryColor: "#B4F461",
+                        primaryHoverColor: "#95c950",
+                        colors: "#111111",
+                        bgColor: "#f9eacc",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+    <header class="lg:px-0 px-3 pb-8 sticky top-0 w-full backdrop-filter backdrop-blur-lg bg-opacity-50">
+        <nav class="bg-bgColor pt-5 pb-6">
+            <div class="navbar container mx-auto">
+                <div class="navbar-start">
+                    <a href="./blogpage.html"
+                        class="btn bg-primaryColor px-7 hover:bg-primaryHoverColor text-colors text-xl">Blog</a>
+                </div>
+                <div class="navbar-center space-x-4 lg:flex flex-row items-center justify-center">
+                    <img src="./assets/logo.png" alt="logo" class="w-12 h-12" />
+                    <h1 class="text-2xl font-bold hidden lg:flex">Helpy</h1>
+                </div>
+                <div class="navbar-end space-x-2">
+                    <img src="./assets/coin.png" alt="" />
+                    <a class="text-xl font-semibold text-color opacity-75"><span id="initialBalance">5500</span> BDT</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Help and History Button -->
+        <div class="flex flex-row justify-center space-x-4 items-center mt-16">
+            <button class="btn bg-primaryColor px-6 hover:bg-primaryHoverColor text-colors text-xl" id="helpButton">
+                Help
+            </button>
+            <button class="btn btn-outline px-6 text-colors text-xl" id="historyButton">
+                History
+            </button>
+        </div>
+    </header>
+    <!-- Header End -->
+     
+    <!-- Main Start -->
+    <main class="container mx-auto mt-20 lg:px-0 px-3">
+        <!-- Help Section -->
+        <section id="helpingCard">
+            <!-- card 1 -->
+            <div class="mt-8 border rounded-xl lg:p-10 p-5">
+                <div class="flex lg:flex-row flex-col justify-between">
+                    <figure class="">
+                        <img src="./assets/noakhali.png" class="lg:w-[650px]" />
+                    </figure>
+                    <div class="lg:w-[750px] space-y-4">
+                        <button class="btn text-gray-500 lg:mt-0 mt-4">
+                            <img src="./assets/coin.png" class="lg:w-7" alt="" />
+                            <span id="displayHelpingAmount1">0</span> BDT
+                        </button>
+
+                        <h2 class="card-title font-bold" id="helpTitle1">
+                            Help for Flooded at Noakhali, Bangladesh.
+                        </h2>
+                        <p class="text-lg font-light">
+                            The rigorous flood in Noakhali, have affected the whole livelihoods of this area. Without the helping hand of people and government the livelihoods may face unexplainable outcome. Let us raise our helping hand for the helpless human being. To help people is a noble duty of humankind as we all the creatures of one God. Let's spread love for the sake of love of people. Helping is easy with this website. Just add your amount to the input field below and click the 'Help Now' button, your amount will be added to our transactions history. To see the history you may click the History button above.
+                        </p>
+                        <input type="text" placeholder="Input Helping Amount" class="input input-bordered w-full"
+                            id="helpAmount1"/>
+                        <div class="card-actions">
+                            <button class="btn bg-primaryColor text-xl hover:bg-primaryHoverColor w-full"
+                                id="helpNowBtn1">
+                                Help Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="mt-8 border rounded-xl lg:p-10 p-6">
+                <div class="flex lg:flex-row flex-col justify-between">
+                    <figure class="">
+                        <img src="./assets/feni.png" class="lg:w-[650px]" />
+                    </figure>
+                    <div class="lg:w-[750px] space-y-4">
+                        <button class="btn text-gray-500 lg:mt-0 mt-4">
+                            <img src="./assets/coin.png" class="lg:w-7" alt="" />
+                            <span id="displayHelpingAmount2">0</span> BDT
+                        </button>
+
+                        <h2 class="card-title font-bold" id="helpTitle2">
+                            Help for Flooded at Feni, Bangladesh.
+                        </h2>
+                        <p class="text-lg font-light">
+                            The rigorous flood in Feni, have affected the whole livelihoods of this area. Without the helping hand of people and government the livelihoods may face unexplainable outcome. Let us raise our helping hand for the helpless human being. To help people is a noble duty of humankind as we all the creatures of one God. Let's spread love for the sake of love of people. Helping is easy with this website. Just add your amount to the input field below and click the 'Help Now' button, your amount will be added to our transactions history. To see the history you may click the History button above.
+                        </p>
+                        <input type="text" placeholder="Input Helping Amount" class="input input-bordered w-full"
+                            id="helpAmount2"/>
+                        <div class="card-actions">
+                            <button class="btn bg-primaryColor text-xl hover:bg-primaryHoverColor w-full"
+                                id="helpNowBtn2">
+                                Help Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="mt-8 border rounded-xl lg:p-10 p-6">
+                <div class="flex lg:flex-row flex-col justify-between">
+                    <figure class="">
+                        <img src="./assets/quota-protest.png" class="lg:w-[650px]" />
+                    </figure>
+                    <div class="lg:w-[750px] space-y-4">
+                        <button class="btn text-gray-500 lg:mt-0 mt-4">
+                            <img src="./assets/coin.png" class="lg:w-7" alt="" />
+                            <span id="displayHelpingAmount3">0</span> BDT
+                        </button>
+
+                        <h2 class="card-title font-bold" id="helpTitle3">
+                            Help for Injured of the Quota Movement in Bangladesh.
+                        </h2>
+                        <p class="text-lg font-light">
+                            Bangladeshi students have made a new history recently. The recent Quota Movement, a nationwide protest in Bangladesh demanding a fair quota system for government jobs, has been marked by both peaceful demonstrations and violent clashes. Many individuals, including students, activists, and ordinary citizens, have sustained injuries during these protests. The injuries range from minor bruises to severe wounds, and some individuals have even lost their lives. Providing help to the injured is a crucial step in supporting the victims of the Quota Movement and ensuring their well-being. Let's spread love for the sake of love of people. Helping is easy with this website. Just add your amount to the input field below and click the 'Help Now' button, your amount will be added to our transactions history. To see the history you may click the History button above.
+                        </p>
+                        <input type="text" placeholder="Input Helping Amount" class="input input-bordered w-full"
+                            id="helpAmount3"/>
+                        <div class="card-actions">
+                            <button class="btn bg-primaryColor text-xl hover:bg-primaryHoverColor w-full"
+                                id="helpNowBtn3">
+                                Help Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Helping History section -->
+        <section id="helpingHistory" class="space-y-4 hidden"></section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="mt-20 pt-36 bg-bgColor"></footer>
+
+    <dialog id="alertModal" class="modal modal-bottom sm:modal-middle flex justify-center items-center text-center">
+        <div class="modal-box">
+            <h3 class="text-3xl font-bold">Jazakallah!</h3>
+            <div class="flex justify-center items-center mt-4 mb-4">
+                <img src="./assets/coin.png" class="w-9" alt="" />
+            </div>
+            <p class="py-4 font-semibold">Your Help Is Added</p>
+            <h4 class="font-bold text-xl">Successfully</h4>
+            <form method="dialog" class="mt-5">
+                <button class="btn font-bold">Close Confirmation Box</button>
+            </form>
+        </div>
+    </dialog>
+
+    <script src="./index.js"></script>
+    <script src="./function.js"></script> 
+</body>
+
+</html>
