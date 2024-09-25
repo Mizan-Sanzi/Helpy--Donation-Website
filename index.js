@@ -81,7 +81,7 @@ function declaredID(id) {
     );
   
     alertModal.showModal();
-    id("helpAmount1").value = "";
+    declaredID("helpAmount1").value = "";
   });
   // HelpNow Button 2
   helpNowBtn2.addEventListener("click", function () {
@@ -101,7 +101,7 @@ function declaredID(id) {
       alert("Insufficient balance! You can't help");
       return;
     }
-    id("displayHelpingAmount2").innerHTML = displayHelpingAmount2 + helpAmount2;
+    declaredID("displayHelpingAmount2").innerHTML = displayHelpingAmount2 + helpAmount2;
     initialBalance.innerText = newBalance;
   
     helpingHistory.innerHTML += showHistory(
@@ -111,7 +111,7 @@ function declaredID(id) {
     );
   
     alertModal.showModal();
-    id("helpAmount2").value = "";
+    declaredID("helpAmount2").value = "";
   });
   // HelpNow Button 3
   helpNowBtn3.addEventListener("click", function () {
