@@ -1,3 +1,4 @@
+// common function
 function showHistory(
     helpingHistoryAmount,
     helpingHistoryTitle,
