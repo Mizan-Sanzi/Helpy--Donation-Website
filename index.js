@@ -1,4 +1,4 @@
-// Common function to get the ID
+// Common function to use elsewhere..
 function declaredID(id) {
     return document.getElementById(id);
   }
